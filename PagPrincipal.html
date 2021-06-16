@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut" href="#">
+        <meta name="viewport" content="width=device-width, initial-sacale=1.0">
+        <link rel="stylesheet" href="Estilos CSS/Estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+        <title>Organización de eventos</title>
+        <!--<link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">-->
+        <!--<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>-->
+        <link rel="stylesheet" href="Estilos CSS/video-js.min.css">
+        <script src="JavaScript/video.min.js"></script>
+
+    </head>
+    <body>
+        <!-----------------------------Header; Logo, nombre, menu----------------------------->
+        
+        <header>
+            <div class="contenedor">
+                <img class="logotipo" src="img/Logo.icon" alt="Logo de la empresa" title="Logo de la empresa" width="47" class="imagen">
+                <h1>Comunicandome desde un universo alterno</h1>
+                <nav>
+                    <a href="PagPrincipal.html" class="activo">Inicio</a>
+                    <a href="#" >Help me</a>
+                    <a href="#" >Please</a>
+                    <a href="https://www.facebook.com/" >Facebook</a>
+                </nav>
+            </div>
+        </header>
+        <div class="encabezado">
+
+        </div>
+        <!----------------------------------Contenido general---------------------------------->
+        <main>
+            <div class="contenedor">
+                <div class="nombre">Farfán Roldán Luis Armando</div>
+                <div class="separacion">
+                    <!--Espacio de separacion en blanco-->
+                </div>
+                <h2 class="titulo">Ahora me encuentro en la dimencion 4</h2>
+                <p class="p1">Aunque parezca muy tonto, esta es la unica forma para poder comunicarme contigo, ya no cuento con mi telefono por lo que mi WhatsApp deberas de bloquear de inmediato, te lo agradecesiar si así es.</p>
+                <div class="separacion">
+                    <!--Espacio de separacion en blanco-->
+                </div>
+                <img loading="lazy" src="img/1006816.jpg" width="70%" alt="Evento uno" >
+                <div class="descripcion1">
+                    <p class="descripcion">Me asaltaron por lo que no me es posible contactarte en este momento, y dudo que te conectes a Messenger dentro de los proximos años, espero me disculpes si te es molesto, no es mi intención.</p>
+                </div>
+                <div class="separacion">
+                    <!--Espacio de separacion en blanco-->
+                </div>
+
+                <!--Videos con la ayuda de la libreria (VideoJS)-->
+                <div class="videos">
+
+                    <div class="video">
+                        <video controls class="fm-video video-js vjs-big-play-centered" data-setup="{}" id="fm-video">
+                            <source src="videos/Gatito.mp4" type="video/mp4">
+                        </video>
+                        <small class="small">Si soy</small>
+                    </div>
+                    
+                </div>    
+                
+            </main>
+            
+            <footer>
+                <h3><a href="PagPrincipal.html" title="Únete a nosotros" class="tituloFooter">Entra a Messenger</a></h3>
+        
+                <button class="boton" >Boletin</button>
+                <button class="boton" >Lista de correo</button>
+                <button class="boton" >Únirse</button>
+                            
+            </footer>
+            
+
+        <!--Script correspondiente al reproductor de video-->
+        <script>
+            var reproductor = videojs('fm-video', {
+                fluid: true
+            });
+        </script>
+    </body>
+</html>

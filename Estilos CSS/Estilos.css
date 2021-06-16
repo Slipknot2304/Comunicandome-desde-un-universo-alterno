@@ -1,0 +1,162 @@
+/* ---- ----- ----- Header ----- ----- ----- */
+:root {
+	--rojo: #661362;
+	--fondo: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 85%;
+	margin: auto;
+}
+
+header {
+    padding: 5px 0;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(5, 37, 35, 0.8);
+}
+
+header .contenedor {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 10px;
+}
+
+header nav a {
+	color: rgb(165, 160, 160);
+	text-decoration: none;
+	margin-right: 20px;
+    transition: color .4s ease;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: rgb(255, 255, 255);
+}
+
+h1{
+    position: absolute;
+    left: 15%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/HiConcept.png) no-repeat;
+    background-attachment: fixed;
+}
+
+.encabezado{
+    padding: 160px 0;
+}
+
+/* ---- ----- ----- Cuerpo de la pagina ----- ----- ----- */
+main{
+    background: #ffffff;
+}
+
+.nombre{
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+.separacion{
+    padding: 50px;
+}
+
+h2{
+    padding: 20px 0;
+    text-align: center;
+    color: #a5229e;
+}
+
+p{
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.descripcion1{
+    position: absolute;
+    width: 50%;
+    left: 300px;    
+}
+
+.descripcion{
+    text-align: center;
+}
+
+/* ---- ----- ----- Reproductor y videos ----- ----- ----- */
+
+.video{
+    position: relative;
+    width: 350px;
+    left: 355px;
+    padding: 50px;
+}
+
+.fm-video{
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .5);
+}
+
+.small{
+    position: absolute;
+    left: 130px;
+    padding: 10px;
+}
+
+/* ---- ----- ----- Footer ----- ----- ----- */
+
+footer{
+    background: #ffffff;
+    display: flex;
+	justify-content:space-around;
+	align-items:flex-end;
+    padding: 20px;
+}
+
+.boton {
+	background: rgba(28, 3, 138, .9);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.35em 3.00em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+    left: 0%;
+}
+
+.boton:hover {
+	background: rgba(114, 39, 212, 0.692);
+	color: #000;
+}
+
+.boton i {
+	margin-right: 1.25em;
+}
+
+.tituloFooter{
+    text-decoration: none;
+    color: #000;
+}
